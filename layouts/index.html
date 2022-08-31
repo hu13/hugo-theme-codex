@@ -9,14 +9,22 @@
     
     <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
     {{ if isset .Params "handle" }}
-    <span class="handle">@{{ .Params.handle }}</span>
+    <a href="https://github.com/hu13" target="_blank"><span class="handle">@{{ .Params.handle }}</span></a>
     {{ end }}
     <h2>
-      {{ .Params.subheading }}
+      <div>
+        {{ .Params.subheading }}
+        <img class="firefighter" src="../fireman.png" alt="">
+        @ <a href="https://www.preveil.com" target="_blank"><img class="pvlogo" src="https://www.preveil.com/wp-content/themes/preveil/images/logo-preveil.svg" alt="PreVeil"></a>
+      </div>
+
     </h2>
     <!-- Replace MEEEEE -->
+    <div>
+      <a href="../resume.html" target="_blank"><img class="cv" src="../cv.png" alt=""></a>
+      {{ partial "social-icons.html" .}}
+    </div>
 
-    {{ partial "social-icons.html" .}}
   </div>
 </div>
 

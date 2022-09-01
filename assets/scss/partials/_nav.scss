@@ -18,6 +18,13 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background-color: black;
+    color: white;
+  }
+}
+
 .nav--active .nav {
   visibility: visible;
   height: 100%;

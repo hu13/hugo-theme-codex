@@ -17,3 +17,9 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .social-icons__icon {
+    filter: invert(100);
+  }
+}

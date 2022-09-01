@@ -23,3 +23,9 @@
 .cv:hover {
     background-color: yellow;
 }
+
+@media (prefers-color-scheme: dark) {
+    .cv {
+        filter: invert(100);
+    }
+}

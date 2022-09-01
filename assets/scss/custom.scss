@@ -1,4 +1,3 @@
-// custom.scss
 .fancy {
     color: #057be2;
 }
@@ -9,8 +8,8 @@
 
 .pvlogo {
     padding: 1%;
-    background-color: rgb(18, 26, 63);
-    color: white;
+    background-color: #121a3f;
+    color: #fff;
     width: 7%;
 }
 
@@ -21,11 +20,19 @@
 }
 
 .cv:hover {
-    background-color: yellow;
+    background-color: #ff0;
 }
 
 @media (prefers-color-scheme: dark) {
     .cv {
         filter: invert(100);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cv {
+        width: 10%;
+        margin-right: 6%;
+        padding-bottom: 4;
     }
 }
